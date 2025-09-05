@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # FOMO-60k Brain Diffusion Pipeline
 
 This repository contains the pipeline for preprocessing FOMO-60k brain MRI data, applying wavelet transformation, and training a lightweight diffusion model.
@@ -88,3 +89,6 @@ To use GPU, simply change the `--device` parameter to `cuda` in the training com
 - The pipeline is designed to work with a single subject (sub_1) from the FOMO-60k dataset
 - All preprocessing steps create their output in separate directories to maintain the original data
 - The model checkpoint will be saved in the `models` directory
+=======
+# lightweight-fomo
+>>>>>>> b107c11781a849d70d6e9576881077b02e5d579c
