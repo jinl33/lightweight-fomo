@@ -8,19 +8,50 @@ This is a test implementation combining the [FOMO-60k dataset](https://github.co
 
 Note: This is a minimal implementation intended for testing and learning purposes. For full dataset processing, please refer to the original repositories.
 
-## Environment Setup
+## Repository Structure
+```
+.
+├── scripts/                    # Standalone scripts for data processing
+│   ├── download_one_subject.py # Downloads single subject from FOMO-60k
+│   ├── preprocess_sub1.py     # FOMO preprocessing script
+│   └── wavelet_preprocess.py  # Wavelet transformation script
+├── src/                       # Source code
+│   ├── train_diffusion.py    # Main training script
+│   └── utils/                # Utility functions
+│       └── simple_utils.py   # Helper utilities
+├── requirements.txt          # Python dependencies
+└── README.md                # This file
+```
 
-1. Create a Python virtual environment (Python 3.11 recommended):
+## Setup Instructions
+
+1. Clone this repository:
+```bash
+git clone https://github.com/jinl33/lightweight-fomo.git
+cd lightweight-fomo
+```
+
+2. Create and activate Python virtual environment (Python 3.11 recommended):
 ```bash
 python3.11 -m venv fomo_env
 source fomo_env/bin/activate  # On Windows use: fomo_env\Scripts\activate
 pip install --upgrade pip setuptools wheel
 ```
 
-2. Clone required repositories:
+3. Install dependencies:
 ```bash
+pip install -r requirements.txt
+```
+
+4. Clone required external repositories:
+```bash
+# Clone in a separate directory outside this repository
+cd ..
 git clone https://github.com/fomo25/baseline-codebase.git
 git clone https://github.com/wilmsm/lightweightbraindiff.git
+cd baseline-codebase
+pip install -e ".[dev,test]"
+cd ../lightweight-fomo  # Return to main repository
 ```
 
 3. Install dependencies:
