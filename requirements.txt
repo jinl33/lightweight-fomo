@@ -1,0 +1,27 @@
+# Core dependencies
+torch>=2.2.0
+torchvision
+torchaudio
+monai[all]>=1.4.0
+PyWavelets>=1.9.0
+numpy>=1.24.0
+nibabel>=5.3.0
+scipy>=1.16.0
+scikit-learn>=1.7.0
+matplotlib>=3.10.0
+tqdm>=4.67.0
+
+# FOMO baseline dependencies
+yucca>=2.2.6
+batchgenerators>=0.23
+clearml>=2.0.0
+wandb>=0.16.0
+nnunetv2>=2.4.2
+
+# Data handling
+huggingface-hub
+datasets
+SimpleITK
+
+# Generative models
+git+https://github.com/Project-MONAI/GenerativeModels.git
