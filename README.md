@@ -1,7 +1,12 @@
-<<<<<<< HEAD
-# FOMO-60k Brain Diffusion Pipeline
+# FOMO-60k Brain Diffusion Pipeline (Test Implementation)
 
-This repository contains the pipeline for preprocessing FOMO-60k brain MRI data, applying wavelet transformation, and training a lightweight diffusion model.
+This is a test implementation combining the [FOMO-60k dataset](https://github.com/fomo25/baseline-codebase) preprocessing pipeline with the [lightweight brain diffusion model](https://github.com/wilmsm/lightweightbraindiff). It's configured for single-subject testing (sub_1) to demonstrate:
+
+- Basic preprocessing of FOMO-60k brain MRI data
+- Wavelet transformation for data preprocessing
+- Training of the lightweight diffusion model
+
+Note: This is a minimal implementation intended for testing and learning purposes. For full dataset processing, please refer to the original repositories.
 
 ## Environment Setup
 
