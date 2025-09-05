@@ -54,17 +54,6 @@ pip install -e ".[dev,test]"
 cd ../lightweight-fomo  # Return to main repository
 ```
 
-3. Install dependencies:
-```bash
-# Install from requirements.txt
-pip install -r requirements.txt
-
-# Install baseline-codebase
-cd baseline-codebase
-pip install -e ".[dev,test]"
-cd ..
-```
-
 ## Data Download and Processing Pipeline
 
 1. Download single subject (sub_1) data:
